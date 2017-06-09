@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1
+        {
+            text-align: center;
+        }
+        .auto-style3
+        {
+            text-align: center;
+            font-size: x-large;
+            color: #0000FF;
+        }
+        .auto-style4
+        {
+            width: 55px;
+        }
+        .auto-style5
+        {
+            color: #CC3399;
+        }
+        .auto-style6
+        {
+            width: 319px;
+        }
+        .auto-style7
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: #FFCCCC; font-weight: 700; font-size: medium;">
+    <form id="form1" runat="server">
+    <div>
+        <table style="width: 100%;">
+            <tr>
+                <td class="auto-style3" colspan="3">
+                    <asp:Image ID="Image1" runat="server" Height="68px" ImageUrl="~/Images/ntu.jpg" Width="85px" />
+                    <span class="auto-style5"><strong><em>TRANG TRA CỨU SINH VIÊN TRƯỜNG ĐẠI HỌC NHA TRANG<br />
+                    </em></strong></span></td>
+            </tr>
+            <tr>
+                <td class="auto-style6">
+                    <p>
+                        <asp:Button ID="btnTroVe" runat="server" Text="VỀ TRANG CHỦ" />
+                        <asp:Button ID="btnThoat" runat="server" Text="THOÁT" />
+                        <asp:Button ID="btnDangxuat" runat="server" Text="ĐĂNG XUẤT" />
+                    </p>
+                </td>
+                <td class="auto-style4">
+                    &nbsp;</td>
+                <td>
+                    <asp:Image ID="Image2" runat="server" Height="170px" ImageUrl="~/Images/anh Truong DHNT moi.jpg" Width="341px" CssClass="auto-style7" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style6">
+                    <asp:Label ID="lblMeNu" runat="server" Text="Label"></asp:Label>
+                </td>
+                <td class="auto-style4">
+                    &nbsp;</td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style1" colspan="3">Thuộc website trường Đại học Nha Trang</td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
